@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Note that this is just a starting-point layout; you will have to add to it -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="Full Name" />
+
+        <EditText
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/ageView"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Age" />
+
+        <TextView
+            android:id="@+id/ageCalculated"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Birthdate" />
+
+        <TextView
+            android:id="@+id/tvBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Select a Date" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="save"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="load"
+                android:text="Load" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

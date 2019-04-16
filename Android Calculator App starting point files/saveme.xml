@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Note that this is just a starting-point layout; you will have to add to it -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:gravity="center">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"/>
+    <LinearLayout 
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:gravity="left">
+	    <Button android:id="@+id/save"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Save"/>
+	    <Button android:id="@+id/load"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Load"/>
+	</LinearLayout>
+    </LinearLayout>
+</ScrollView>
